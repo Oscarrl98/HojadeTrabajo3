@@ -1,13 +1,13 @@
-﻿using Ht3v1App.Properties.service;
+﻿using Ht3v2App.Properties.service;
 
-namespace Ht3v1App.Properties.view
+namespace Ht3v2App.Properties.view
 {
-    public class Ht3v1App
+    internal class Ht3v2App
     {
         public static void Main(string[] args)
         {
-            FormatFile nFormat= new FormatFile();
-            nFormat.ConverFile(args);
+            FormatFacade facade =new FormatFacade();
+            facade.Format(args);
         }
     }
 }
